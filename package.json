@@ -1,0 +1,11 @@
+{
+  "name": "us-dedicated-server-availability-checker",
+  "version": "1.0.0",
+  "description": "Simple app for checking server availability status on US Dedicated site.",
+  "main": "server.js",
+  "author": "Kacper Brzozowski",
+  "dependencies": {
+    "puppeteer": "^1.7.0",
+    "node-pagerduty": "^1.0.2",
+  }
+}
