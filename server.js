@@ -5,7 +5,7 @@ const pdClient = require('node-pagerduty');
 const pd = new pdClient(config.PAGERDUTY_API_KEY);
 
 (async () => {
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
   let isServerHereSir = false;
 
   while (isServerHereSir == false) {
